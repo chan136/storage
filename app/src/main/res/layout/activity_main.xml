@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/toolbar_main" />
+
+    <RelativeLayout
+        android:onClick="onClick"
+        android:id="@+id/checkin"
+        android:background="@color/main_bg"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="70dp">
+        <ImageButton
+            android:onClick="onClick"
+            android:id="@+id/checkin_ib"
+            android:background="@drawable/ic_checkin_36dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="入库"
+            android:textSize="17dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:onClick="onClick"
+        android:id="@+id/supplier"
+        android:background="@color/main_bg"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="70dp">
+
+        <ImageButton
+            android:onClick="onClick"
+            android:id="@+id/supplier_ib"
+            android:background="@drawable/ic_supplier_36dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="供货商"
+            android:textSize="17dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:onClick="onClick"
+        android:id="@+id/checkout"
+        android:background="@color/main_bg"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="165dp">
+        <ImageButton
+            android:onClick="onClick"
+            android:id="@+id/checkout_ib"
+            android:background="@drawable/ic_checkout_36dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="出库"
+            android:textSize="17dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:onClick="onClick"
+        android:id="@+id/buyer"
+        android:background="@color/main_bg"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="165dp">
+
+        <ImageButton
+            android:onClick="onClick"
+            android:id="@+id/buyer_ib"
+            android:background="@drawable/ic_buyer_36dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="买家"
+            android:textSize="17dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:onClick="onClick"
+        android:id="@+id/device"
+        android:background="@color/main_bg"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="260dp">
+        <ImageButton
+            android:onClick="onClick"
+            android:id="@+id/device_ib"
+            android:background="@drawable/ic_devices_other_black_36dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="货品"
+            android:textSize="17dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:onClick="onClick"
+        android:id="@+id/checklist"
+        android:background="@color/main_bg"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="260dp">
+
+        <ImageButton
+            android:onClick="onClick"
+            android:id="@+id/checklist_ib"
+            android:background="@drawable/ic_checklist_36dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="盘货"
+            android:textSize="17dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:onClick="onClick"
+        android:id="@+id/search"
+        android:background="@color/main_bg"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="355dp">
+        <ImageButton
+            android:onClick="onClick"
+            android:id="@+id/search_ib"
+            android:background="@drawable/ic_search_36dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查找"
+            android:textSize="17dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:onClick="onClick"
+        android:id="@+id/data"
+        android:background="@color/main_bg"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="355dp">
+
+        <ImageButton
+            android:onClick="onClick"
+            android:background="@drawable/ic_data_36dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:id="@+id/data_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数据分析"
+            android:textSize="17dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:onClick="onClick"
+        android:id="@+id/account"
+        android:background="@color/main_bg"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="450dp">
+        <ImageButton
+            android:onClick="onClick"
+            android:id="@+id/account_ib"
+            android:background="@drawable/ic_account_36dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的账号"
+            android:textSize="17dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:onClick="onClick"
+        android:id="@+id/settings"
+        android:background="@color/main_bg"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="450dp">
+
+        <ImageButton
+            android:onClick="onClick"
+            android:id="@+id/settings_ib"
+            android:background="@drawable/ic_settings_black_36dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:textSize="17dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70dp" />
+    </RelativeLayout>
+</RelativeLayout>

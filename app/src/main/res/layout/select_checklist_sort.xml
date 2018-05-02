@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="排序属性"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:background="@color/select_device"
+        android:id="@+id/textView18"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/one"
+        android:layout_below="@+id/textView18"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="货品名称"
+            android:textSize="20dp"
+            android:id="@+id/textView19"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp" />
+
+        <View
+            android:layout_width="280dp"
+            android:layout_height="1dp"
+            android:background="@color/list_view"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/textView19"
+            android:layout_alignStart="@+id/textView19"
+            android:id="@+id/view6" />
+
+        <ImageButton
+            android:visibility="gone"
+            android:background="@drawable/ic_arrow_up_24dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/btn1"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/view6"
+            android:layout_alignEnd="@+id/view6" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/two"
+        android:layout_below="@+id/one"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="货品SKU"
+            android:textSize="20dp"
+            android:id="@+id/textView20"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp" />
+
+        <View
+            android:layout_width="280dp"
+            android:layout_height="1dp"
+            android:background="@color/list_view"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/textView20"
+            android:layout_alignStart="@+id/textView20"
+            android:id="@+id/view7" />
+
+        <ImageButton
+            android:visibility="gone"
+            android:background="@drawable/ic_arrow_up_24dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/btn2"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/view7"
+            android:layout_alignEnd="@+id/view7" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/three"
+        android:layout_below="@+id/two"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="现有库存数量"
+            android:textSize="20dp"
+            android:id="@+id/textView21"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp" />
+
+        <View
+            android:layout_width="280dp"
+            android:layout_height="1dp"
+            android:background="@color/list_view"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/textView21"
+            android:layout_alignStart="@+id/textView21"
+            android:id="@+id/view8" />
+
+        <ImageButton
+            android:visibility="gone"
+            android:background="@drawable/ic_arrow_up_24dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/btn3"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/view8"
+            android:layout_alignEnd="@+id/view8" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/four"
+        android:layout_below="@+id/three"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间"
+            android:textSize="20dp"
+            android:id="@+id/textView22"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp" />
+
+        <View
+            android:layout_width="280dp"
+            android:layout_height="1dp"
+            android:background="@color/list_view"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/textView22"
+            android:layout_alignStart="@+id/textView22"
+            android:id="@+id/view9" />
+
+        <ImageButton
+            android:background="@drawable/ic_arrow_up_24dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/btn4"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/view9"
+            android:layout_alignEnd="@+id/view9" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/seven"
+        android:layout_marginTop="230dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textSize="20dp"
+            android:textColor="@color/select_device"
+            android:id="@+id/search_checkin_sort_cencel"
+            android:layout_marginLeft="80dp"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textSize="20dp"
+            android:textColor="@color/select_device"
+            android:id="@+id/search_checkin_sort_ensure"
+            android:layout_marginLeft="81dp"
+            android:layout_marginStart="81dp"
+            android:layout_alignTop="@+id/search_checkin_sort_cencel"
+            android:layout_toRightOf="@+id/search_checkin_sort_cencel"
+            android:layout_toEndOf="@+id/search_checkin_sort_cencel" />
+    </RelativeLayout>
+
+</RelativeLayout>

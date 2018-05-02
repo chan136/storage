@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/table_head"
+        android:text="现有库存数量"
+        android:textColor="@color/textColorPrimary"
+        android:background="@color/select_device"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <RelativeLayout
+        android:background="@color/light_pink"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <EditText
+            android:id="@+id/count_now"
+            android:inputType="number"
+            android:textSize="40dp"
+            android:theme="@style/EditTextGreen"
+            android:background="@null"
+            android:gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+        <ImageButton
+            android:onClick="onClick"
+            android:id="@+id/add"
+            android:background="@drawable/ic_add_black_24dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="15dp"/>
+
+        <ImageButton
+            android:onClick="onClick"
+            android:id="@+id/minus"
+            android:background="@drawable/ic_remove_black_24dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="55dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/select_device"
+            android:id="@+id/date"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:onClick="onClick"
+            android:background="@drawable/ic_image_24dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/image"
+            android:layout_marginLeft="260dp"
+            android:layout_centerVertical="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/list_view"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/SKU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"/>
+
+        <ImageButton
+            android:onClick="onClick"
+            android:id="@+id/back"
+            android:background="@drawable/ic_chevron_right_white_24dp"
+            android:layout_marginLeft="260dp"
+            android:layout_centerVertical="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/list_view"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:text="原因"
+            android:textColor="@color/select_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:onClick="onClick"
+            android:id="@+id/error"
+            android:text="修订错误"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_centerVertical="true"/>
+
+        <ImageButton
+            android:onClick="onClick"
+            android:id="@+id/expand"
+            android:background="@drawable/ic_description_black_24dp"
+            android:layout_marginLeft="260dp"
+            android:layout_centerVertical="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/expand_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <EditText
+            android:id="@+id/describe"
+            android:background="@drawable/edit_bg"
+            android:theme="@style/EditTextGreen"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/list_view"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/cancel"
+            android:text="取消"
+            android:textColor="@color/select_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"/>
+
+        <TextView
+            android:id="@+id/ensure"
+            android:text="确定"
+            android:textColor="@color/select_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="200dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

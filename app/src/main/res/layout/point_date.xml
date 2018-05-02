@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="日期-时间"
+        android:textColor="@color/textColorPrimary"
+        android:background="@color/checkin"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:onClick="onClick"
+            android:background="@drawable/tv_green_border"
+            android:text="指定"
+            android:textColor="@color/checkin"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:id="@+id/point" />
+
+        <TextView
+            android:onClick="onClick"
+            android:background="@drawable/tv_black_border"
+            android:text="范围"
+            android:textColor="@color/gray"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:id="@+id/range"
+            android:layout_alignTop="@+id/point"
+            android:layout_toRightOf="@+id/point"
+            android:layout_toEndOf="@+id/point" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/point_equal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:text="等于"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:onClick="equal"
+            android:focusable="false"
+            android:id="@+id/equal"
+            android:theme="@style/EditTextGreen"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/range_start"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:text="起始"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:onClick="start"
+            android:focusable="false"
+            android:id="@+id/start"
+            android:theme="@style/EditTextGreen"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/range_end"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:text="截至"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:onClick="end"
+            android:focusable="false"
+            android:id="@+id/end"
+            android:theme="@style/EditTextGreen"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:text="取消"
+            android:textSize="16dp"
+            android:textColor="@color/checkin"
+            android:layout_marginLeft="90dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/ensure"
+            android:text="确定"
+            android:textSize="16dp"
+            android:textColor="@color/checkin"
+            android:layout_marginLeft="200dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>

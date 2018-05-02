@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="设置蓝牙扫码器"
+        android:textColor="@color/textColorPrimary"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <RelativeLayout
+        android:background="@color/bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:text="关闭"
+            android:textSize="22dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+        <ImageButton
+            android:onClick="onClick"
+            android:id="@+id/button"
+            android:background="@drawable/close"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="260dp"
+            android:layout_width="40dp"
+            android:layout_height="20dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:onClick="onClick"
+            android:id="@+id/back"
+            android:text="返回"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="260dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

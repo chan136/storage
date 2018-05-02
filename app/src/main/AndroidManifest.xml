@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.storage">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Enter.Login"
+            android:label="我的仓库">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".Enter.Register"
+            android:label="注册界面"/>
+        <activity
+            android:name=".Main.MainActivity"
+            android:label="我的仓库"/>
+        <activity
+            android:name=".Checkin.Checkin"
+            android:label="新入库"
+            android:windowSoftInputMode="stateUnchanged" />
+        <activity
+            android:name=".Device.Select_device"
+            android:label="选取货品"
+            android:theme="@style/orange" />
+        <activity
+            android:name=".Supplier.Select_supplier"
+            android:label="选取供货商"
+            android:theme="@style/green" />
+        <activity
+            android:name=".Checkin.Checkin_photo"
+            android:label="入库相册" />
+        <activity
+            android:name=".Supplier.Supplier"
+            android:label="新供货商"
+            android:windowSoftInputMode="stateUnchanged" />
+        <activity
+            android:name=".Supplier.Supplier_photo"
+            android:label="供货商相册" />
+        <activity
+            android:name=".Checkout.Checkout"
+            android:label="新出库"
+            android:windowSoftInputMode="stateUnchanged" />
+        <activity
+            android:name=".Checkout.Checkout_photo"
+            android:label="出库相册" />
+        <activity
+            android:name=".Buyer.Select_buyer"
+            android:label="选取买家"
+            android:theme="@style/blue" />
+        <activity
+            android:name=".Buyer.Buyer"
+            android:label="新买家" />
+        <activity
+            android:name=".Buyer.Buyer_photo"
+            android:label="买家相册" />
+        <activity
+            android:name=".Device.Device"
+            android:label="新货品"
+            android:theme="@style/orange"
+            android:windowSoftInputMode="stateUnchanged" />
+        <activity
+            android:name=".Device.Device_photo"
+            android:label="货品相册" />
+        <activity
+            android:name=".Checklist.Checklist"
+            android:label="现有库存数量"
+            android:theme="@style/orange" />
+        <activity
+            android:name=".Search.Search"
+            android:label="查找对象" />
+        <activity
+            android:name=".Search.Choose_checkin"
+            android:label="选择入库记录"
+            android:theme="@style/green" />
+        <activity
+            android:name=".Search.Search_checkin"
+            android:label="查找入库" />
+        <activity
+            android:name=".Search.Choose_checkout"
+            android:label="选择出库记录"
+            android:theme="@style/blue" />
+        <activity
+            android:name=".Search.Result_checkin"
+            android:label="查询结果" />
+        <activity
+            android:name=".Data.Data"
+            android:label="分析对象" />
+        <activity
+            android:name=".Data.Syn_analyse"
+            android:label="综合分析" />
+        <activity
+            android:name=".Data.Device_analyse"
+            android:label="货品分析" />
+        <activity
+            android:name=".Data.Supplier_analyse"
+            android:label="供货商分析" />
+        <activity
+            android:name=".Data.Buyer_analyse"
+            android:label="买家分析" />
+        <activity
+            android:name=".Account.Account"
+            android:label="我的账号" />
+        <activity
+            android:name=".Account.Update_MyAccount"
+            android:label="修改我的账号"
+            android:theme="@style/gray"
+            android:windowSoftInputMode="stateUnchanged" />
+        <activity
+            android:name=".Account.Account_photo"
+            android:label="我的账号相册" />
+        <activity
+            android:name=".Setting.Setting"
+            android:label="设置" />
+        <activity
+            android:name=".Search.Choose_checklist"
+            android:label="选择盘货记录"
+            android:theme="@style/orange" />
+        <activity
+            android:name=".Setting.Database_maintain"
+            android:label="数据库维护" />
+        <activity
+            android:name=".Device.Verify_device"
+            android:label="货品" />
+        <activity
+            android:name=".Device.Update_default"
+            android:label="修改货品默认参数" />
+        <activity
+            android:name=".Supplier.Verify_supplier"
+            android:label="供货商" />
+        <activity
+            android:name=".Search.Choose_device"
+            android:label="选择货品"
+            android:theme="@style/orange" />
+        <activity
+            android:name=".Search.Choose_supplier"
+            android:label="选择供货商"
+            android:theme="@style/green" />
+        <activity
+            android:name=".Search.Choose_buyer"
+            android:label="选择买家"
+            android:theme="@style/blue" />
+        <activity
+            android:name=".Checkin.Verify_checkin"
+            android:label="入库记录" />
+        <activity
+            android:name=".Buyer.Verify_buyer"
+            android:label="选择买家" />
+        <activity
+            android:name=".Checkout.Verify_checkout"
+            android:label="出库记录" />
+        <activity
+            android:name=".Checklist.Checklist_photo"
+            android:label="盘货相册" />
+        <activity
+            android:name=".Checklist.Verify_checklist"
+            android:label="盘货记录" />
+        <activity
+            android:name=".Checkin.Update_checkin"
+            android:label="修改入库"
+            android:theme="@style/green"
+            android:windowSoftInputMode="stateUnchanged" />
+        <activity
+            android:name=".Device.Update_device"
+            android:label="修改货品"
+            android:theme="@style/orange"
+            android:windowSoftInputMode="stateUnchanged" />
+        <activity
+            android:name=".Supplier.Update_supplier"
+            android:label="修改供货商"
+            android:theme="@style/green"
+            android:windowSoftInputMode="stateUnchanged" />
+        <activity
+            android:name=".Buyer.Update_buyer"
+            android:label="修改买家"
+            android:theme="@style/blue"
+            android:windowSoftInputMode="stateUnchanged" />
+        <activity
+            android:name=".Data.Syn_activity"
+            android:label="所有活动" />
+        <activity
+            android:name=".Data.Device_activity"
+            android:label="活动" />
+        <activity
+            android:name=".Data.Supplier_activity"
+            android:label="活动" />
+        <activity
+            android:name=".Data.Buyer_activity"
+            android:label="活动" />
+    </application>
+
+</manifest>

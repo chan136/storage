@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/select_device">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择类别"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:id="@+id/textView28" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="产品"
+            android:textSize="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="原料"
+            android:textSize="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="55dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备"
+            android:textSize="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="90dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务"
+            android:textSize="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="125dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="零售"
+            android:textSize="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="160dp"/>
+
+        <RadioGroup
+            android:id="@+id/type_select"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="250dp">
+
+            <RadioButton
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:id="@+id/product"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:id="@+id/material"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:id="@+id/device"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:id="@+id/service"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:id="@+id/retail"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textSize="15dp"
+            android:textColor="@color/select_device"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="200dp"
+            android:id="@+id/type_cencel" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textSize="15dp"
+            android:textColor="@color/select_device"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="200dp"
+            android:id="@+id/type_ensure" />
+    </RelativeLayout>
+</LinearLayout>

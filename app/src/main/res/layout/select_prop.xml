@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="选取属性"
+        android:textColor="@color/textColorPrimary"
+        android:gravity="center"
+        android:background="@color/checkin"
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:onClick="onClick"
+            android:id="@+id/device"
+            android:text="货品"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="65dp"/>
+
+        <View
+            android:layout_width="130dp"
+            android:layout_height="1dp"
+            android:background="@color/list_view"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:onClick="onClick"
+            android:id="@+id/supplier"
+            android:text="供货商"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="65dp"/>
+
+        <View
+            android:layout_width="130dp"
+            android:layout_height="1dp"
+            android:background="@color/list_view"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:onClick="onClick"
+            android:id="@+id/supplier_count"
+            android:text="数量"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="65dp"/>
+
+        <View
+            android:layout_width="130dp"
+            android:layout_height="1dp"
+            android:background="@color/list_view"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:onClick="onClick"
+            android:id="@+id/supplier_price"
+            android:text="价格￥"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="65dp"/>
+
+        <View
+            android:layout_width="130dp"
+            android:layout_height="1dp"
+            android:background="@color/list_view"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:onClick="onClick"
+            android:id="@+id/date"
+            android:text="时间-日期"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="50dp"/>
+
+        <View
+            android:layout_width="130dp"
+            android:layout_height="1dp"
+            android:background="@color/list_view"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:onClick="onClick"
+            android:id="@+id/describe"
+            android:text="描述"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"/>
+
+        <View
+            android:layout_width="130dp"
+            android:layout_height="1dp"
+            android:background="@color/list_view"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <TextView
+            android:onClick="onClick"
+            android:id="@+id/cancel"
+            android:text="取消"
+            android:textColor="@color/checkin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="150dp"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

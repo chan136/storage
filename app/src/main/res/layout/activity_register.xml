@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/login_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:background="@drawable/register"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@drawable/layout_shape"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:background="@drawable/login_account"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <EditText
+            android:id="@+id/account"
+            android:hint="账号"
+            android:textColorHint="@color/textColorPrimary"
+            android:textSize="20dp"
+            android:background="@null"
+            android:textColor="@color/textColorPrimary"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="60dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/layout_shape">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/pwd" />
+
+        <EditText
+            android:id="@+id/password"
+            android:hint="密码(6位)"
+            android:textColorHint="@color/textColorPrimary"
+            android:textSize="20dp"
+            android:background="@null"
+            android:textColor="@color/textColorPrimary"
+            android:inputType="textPassword"
+            android:maxLength="6"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="60dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/layout_shape">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/pwd" />
+
+        <EditText
+            android:id="@+id/ensure_password"
+            android:hint="确认密码"
+            android:textColorHint="@color/textColorPrimary"
+            android:textSize="20dp"
+            android:background="@null"
+            android:textColor="@color/textColorPrimary"
+            android:inputType="textPassword"
+            android:maxLength="6"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="60dp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:onClick="onClick"
+        android:id="@+id/register"
+        android:text="注册"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/textColorPrimary"
+        android:background="@drawable/bt_login"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <Button
+        android:onClick="onClick"
+        android:id="@+id/back"
+        android:text="返回"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/textColorPrimary"
+        android:background="@drawable/bt_login"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</LinearLayout>

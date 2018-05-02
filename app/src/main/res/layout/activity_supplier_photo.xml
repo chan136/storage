@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <include layout="@layout/toolbar_main" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#ffffff"
+            android:background="#736e6e"
+            android:paddingLeft="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="新供货商"
+            android:id="@+id/textView17"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:background="#DFEEE7"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:background="@drawable/ic_add_a_photo_black"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/addphoto" />
+
+        <TextView
+            android:textSize="20dp"
+            android:textColor="#736e6e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="110dp"
+            android:text="添加照片"
+            android:id="@+id/textView25" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_main" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:text="更新于:"
+            android:textColor="@color/list_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:textColor="@color/list_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"/>
+
+        <ImageButton
+            android:onClick="onClick"
+            android:id="@+id/refresh"
+            android:background="@drawable/ic_refresh_white_24dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="320dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/list_view"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="最近入库"
+            android:textColor="@color/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:onClick="onClick"
+            android:text="全部记录"
+            android:textColor="@color/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="290dp"
+            android:id="@+id/checkin_all" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="@color/search"
+            android:layout_alignLeft="@+id/checkin_all"
+            android:layout_alignStart="@+id/checkin_all"
+            android:layout_below="@+id/checkin_all"
+            android:layout_alignRight="@+id/checkin_all"
+            android:layout_alignEnd="@+id/checkin_all" />
+
+        <ListView
+            android:id="@+id/checkin_listview"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="最近出库"
+            android:textColor="@color/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:onClick="onClick"
+            android:text="全部记录"
+            android:textColor="@color/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="290dp"
+            android:id="@+id/checkout_all" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="@color/search"
+            android:layout_alignLeft="@+id/checkout_all"
+            android:layout_alignStart="@+id/checkout_all"
+            android:layout_below="@+id/checkout_all"
+            android:layout_alignRight="@+id/checkout_all"
+            android:layout_alignEnd="@+id/checkout_all" />
+
+        <ListView
+            android:id="@+id/checkout_listview"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+    </RelativeLayout>
+
+</LinearLayout> 

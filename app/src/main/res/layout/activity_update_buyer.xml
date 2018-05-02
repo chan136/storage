@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/toolbar_update" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:onClick="onClick"
+                    android:background="#DFEEE7"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:id="@+id/person_background"
+                    android:layout_gravity="center_horizontal" />
+
+                <ImageButton
+                    android:onClick="onClick"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/person_256dp"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/person" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="头像"
+                    android:textSize="15dp"
+                    android:textColor="@color/checkout"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/textView9" />
+
+                <ImageButton
+                    android:onClick="onClick"
+                    android:background="@drawable/ic_image_24dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="320dp"
+                    android:layout_marginTop="135dp"
+                    android:id="@+id/image_photo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SKU"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="190dp"
+                    android:textColor="@color/checkout"
+                    android:id="@+id/textView10" />
+
+                <EditText
+                    android:onClick="onClick"
+                    android:theme="@style/EditTextBlue"
+                    android:layout_width="340dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="200dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buyer_SKU" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="名称"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="250dp"
+                    android:textColor="@color/checkout"
+                    android:id="@+id/textView11" />
+
+                <EditText
+                    android:onClick="onClick"
+                    android:theme="@style/EditTextBlue"
+                    android:layout_width="340dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="260dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buyer_name" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="地址"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="310dp"
+                    android:textColor="@color/checkout"
+                    android:id="@+id/textView12" />
+
+                <EditText
+                    android:onClick="onClick"
+                    android:theme="@style/EditTextBlue"
+                    android:layout_width="340dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="320dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/address" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电话"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="370dp"
+                    android:textColor="@color/checkout"
+                    android:id="@+id/textView13" />
+
+                <EditText
+                    android:onClick="onClick"
+                    android:theme="@style/EditTextBlue"
+                    android:layout_width="160dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="380dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tel" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机"
+                    android:textSize="15dp"
+                    android:textColor="@color/checkout"
+                    android:layout_marginLeft="190dp"
+                    android:layout_marginTop="370dp"
+                    android:id="@+id/textView14" />
+
+                <EditText
+                    android:onClick="onClick"
+                    android:theme="@style/EditTextBlue"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="190dp"
+                    android:layout_marginTop="380dp"
+                    android:id="@+id/phone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电邮"
+                    android:textSize="15dp"
+                    android:textColor="@color/checkout"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="430dp"
+                    android:id="@+id/textView15" />
+
+                <EditText
+                    android:onClick="onClick"
+                    android:theme="@style/EditTextBlue"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="440dp"
+                    android:id="@+id/email" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微信"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="490dp"
+                    android:textColor="@color/checkout"
+                    android:id="@+id/textView17" />
+
+                <EditText
+                    android:onClick="onClick"
+                    android:theme="@style/EditTextBlue"
+                    android:layout_width="160dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="500dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/weixin" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QQ号"
+                    android:textSize="15dp"
+                    android:textColor="@color/checkout"
+                    android:layout_marginLeft="190dp"
+                    android:layout_marginTop="490dp"
+                    android:id="@+id/textView16" />
+
+                <EditText
+                    android:onClick="onClick"
+                    android:theme="@style/EditTextBlue"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="190dp"
+                    android:layout_marginTop="500dp"
+                    android:id="@+id/qq" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="描述"
+                    android:textSize="15dp"
+                    android:textColor="@color/checkout"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="550dp"
+                    android:id="@+id/textView18" />
+
+                <EditText
+                    android:onClick="onClick"
+                    android:theme="@style/EditTextBlue"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="560dp"
+                    android:id="@+id/describe" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="网址"
+                    android:textSize="15dp"
+                    android:textColor="@color/checkout"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="610dp"
+                    android:id="@+id/textView19"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:onClick="onClick"
+                    android:theme="@style/EditTextBlue"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="620dp"
+                    android:id="@+id/webpage" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="700dp"/>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <Button
+            android:onClick="onClick"
+            android:id="@+id/ensure"
+            android:layout_width="340dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="520dp"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/shape_blue"
+            android:text="确定"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

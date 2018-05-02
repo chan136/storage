@@ -1,0 +1,64 @@
+<resources>
+    <style name="EditTextOrange" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/select_device</item>
+        <item name="colorControlActivated">@color/select_device</item>
+    </style>
+    <style name="EditTextGreen" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/checkin</item>
+        <item name="colorControlActivated">@color/checkin</item>
+    </style>
+    <style name="EditTextGray" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+    <style name="EditTextBlue" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/checkout</item>
+        <item name="colorControlActivated">@color/checkout</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="titleTextColor">@color/textColorPrimary</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Translation" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="titleTextColor">@color/textColorPrimary</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/OutInAnimTheme</item>
+    </style>
+
+    <style name="OutInAnimTheme" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/in_from_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/out_from_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/in_from_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/out_from_right</item>
+    </style>
+
+    <style name="gray" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="titleTextColor">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+    </style>
+    <style name="orange" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlNormal">@color/select_device</item>
+        <item name="colorAccent">@color/select_device</item>
+    </style>
+    <style name="green" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlNormal">@color/checkin</item>
+        <item name="colorAccent">@color/checkin</item>
+    </style>
+    <style name="blue" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlNormal">@color/checkout</item>
+        <item name="colorAccent">@color/checkout</item>
+    </style>
+
+    <style name="g">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_below">@+id/e</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+</resources>

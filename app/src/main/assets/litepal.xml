@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <dbname value="Store"></dbname>
+    <version value="8"></version>
+
+    <list>
+        <mapping class="com.example.storage.Bean.NewDevice"></mapping>
+        <mapping class="com.example.storage.Bean.NewCheckin"></mapping>
+        <mapping class="com.example.storage.Bean.NewCheckout"></mapping>
+        <mapping class="com.example.storage.Bean.NewSupplier"></mapping>
+        <mapping class="com.example.storage.Bean.NewBuyer"></mapping>
+        <mapping class="com.example.storage.Bean.MyAccount"></mapping>
+        <mapping class="com.example.storage.Bean.User"></mapping>
+        <mapping class="com.example.storage.Bean.RecentUser"></mapping>
+    </list>
+</litepal>

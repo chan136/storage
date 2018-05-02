@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_main" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+
+            <RelativeLayout
+                android:background="@color/main_bg"
+                android:layout_width="300dp"
+                android:layout_height="145dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/one">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="货品"
+                    android:textColor="@color/checkin"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <ImageButton
+                    android:onClick="onClick"
+                    android:id="@+id/list"
+                    android:background="@drawable/ic_list_white_24dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="250dp"/>
+
+                <TextView
+                    android:text="SKU"
+                    android:textSize="13dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <EditText
+                    android:onClick="onClick"
+                    android:id="@+id/one_SKU"
+                    android:textSize="13dp"
+                    android:theme="@style/EditTextGreen"
+                    android:layout_width="265dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:text="名称"
+                    android:textSize="13dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="95dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <EditText
+                    android:onClick="onClick"
+                    android:id="@+id/one_name"
+                    android:textSize="13dp"
+                    android:theme="@style/EditTextGreen"
+                    android:layout_width="265dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="10dp"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp">
+                <ImageButton
+                    android:onClick="onClick"
+                    android:id="@+id/list_cancel"
+                    android:background="@drawable/ic_cancel_reverse_24dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="320dp"
+                    android:layout_marginTop="5dp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        
+        <LinearLayout
+            android:id="@+id/add"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:background="@color/main_bg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="更多条件"
+                android:textSize="13dp"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageButton
+                android:id="@+id/more_if"
+                android:onClick="onClick"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_add_black_24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="330dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:background="@color/main_bg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="按"
+                android:textSize="13dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/textView36" />
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="日期-时间"
+                android:textSize="15dp"
+                android:layout_toRightOf="@+id/textView36"
+                android:layout_toEndOf="@+id/textView36" />
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="从新到旧排序"
+                android:textSize="13dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv1"
+                android:layout_toEndOf="@+id/tv1" />
+
+            <ImageButton
+                android:id="@+id/sort"
+                android:onClick="onClick"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_sort_white_24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="330dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:onClick="onClick"
+            android:layout_width="340dp"
+            android:layout_height="38dp"
+            android:text="查找"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/shape_green"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:id="@+id/device_ensure"/>
+    </LinearLayout>
+
+</LinearLayout>

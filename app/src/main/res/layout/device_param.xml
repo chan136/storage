@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:background="@color/select_device"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:id="@+id/person_background"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageButton
+            android:background="@drawable/ic_devices_other_black_36dp"
+            android:layout_width="200dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/device" />
+
+        <RelativeLayout
+            android:background="#000"
+            android:alpha="0.2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="100dp">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="100dp">
+
+            <TextView
+                android:id="@+id/supplier_SKU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:alpha="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/textColorPrimary"/>
+
+            <TextView
+                android:id="@+id/supplier_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/textColorPrimary"/>
+
+            <ImageButton
+                android:onClick="onClick"
+                android:background="@drawable/ic_image_24dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="320dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/image_photo" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="品牌"
+            android:textSize="15dp"
+            android:textColor="@color/select_device"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="190dp"
+            android:id="@+id/textView12" />
+
+        <EditText
+            android:focusable="false"
+            android:theme="@style/EditTextGray"
+            android:layout_width="160dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/brand" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="类别"
+            android:textSize="15dp"
+            android:textColor="@color/select_device"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="190dp"/>
+
+        <EditText
+            android:id="@+id/type"
+            android:focusable="false"
+            android:theme="@style/EditTextGray"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="200dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="尺寸"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="250dp"
+            android:textColor="@color/select_device"
+            android:id="@+id/textView13" />
+
+        <EditText
+            android:focusable="false"
+            android:theme="@style/EditTextGray"
+            android:layout_width="160dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="260dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="颜色"
+            android:textSize="15dp"
+            android:textColor="@color/select_device"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="250dp"
+            android:id="@+id/textView14" />
+
+        <EditText
+            android:focusable="false"
+            android:theme="@style/EditTextGray"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="260dp"
+            android:id="@+id/color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="规格"
+            android:textSize="15dp"
+            android:textColor="@color/select_device"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="310dp"/>
+
+        <EditText
+            android:focusable="false"
+            android:theme="@style/EditTextGray"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="320dp"
+            android:id="@+id/specification" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="描述"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="370dp"
+            android:textColor="@color/select_device"/>
+
+        <EditText
+            android:focusable="false"
+            android:theme="@style/EditTextGray"
+            android:layout_width="340dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="380dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/describe" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/light_white">
+
+        <TextView
+            android:text="默认参数"
+            android:textSize="15dp"
+            android:textColor="@color/select_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageButton
+            android:onClick="onClick"
+            android:id="@+id/more"
+            android:background="@drawable/ic_more_horiz_white_24dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="320dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="供货商"
+        android:textColor="@color/textColorPrimary"
+        android:background="@color/checkin"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:text="指定供货商"
+            android:textColor="@color/checkin"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/select_device"
+            android:onClick="onClick"
+            android:background="@drawable/ic_list_white_24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="330dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        
+        <TextView
+            android:text="SKU"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+        <EditText
+            android:id="@+id/supplier_SKU"
+            android:theme="@style/EditTextGreen"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:text="名称"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/supplier_name"
+            android:theme="@style/EditTextGreen"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:text="取消"
+            android:textSize="16dp"
+            android:textColor="@color/checkin"
+            android:layout_marginLeft="90dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/ensure"
+            android:text="确定"
+            android:textSize="16dp"
+            android:textColor="@color/checkin"
+            android:layout_marginLeft="200dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>

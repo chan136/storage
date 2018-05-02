@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:text="更新于:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv1"
+            android:layout_toRightOf="@+id/tv1"/>
+
+        <ImageButton
+            android:onClick="onClick"
+            android:id="@+id/refresh"
+            android:background="@drawable/ic_refresh_white_24dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="320dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/list_view"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:text="现有库存数量"
+            android:textColor="@color/select_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:text="123"
+            android:id="@+id/device_count"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/checkin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="最近入库"
+            android:textColor="@color/select_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:onClick="onClick"
+            android:text="全部记录"
+            android:textColor="@color/select_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="290dp"
+            android:id="@+id/checkin_all" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="@color/select_device"
+            android:layout_alignLeft="@+id/checkin_all"
+            android:layout_alignStart="@+id/checkin_all"
+            android:layout_below="@+id/checkin_all"
+            android:layout_alignRight="@+id/checkin_all"
+            android:layout_alignEnd="@+id/checkin_all" />
+
+        <ListView
+            android:id="@+id/checkin_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"></ListView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/checkout"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="最近出库"
+            android:textColor="@color/select_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:onClick="onClick"
+            android:text="全部记录"
+            android:textColor="@color/select_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="290dp"
+            android:id="@+id/checkout_all" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="@color/select_device"
+            android:layout_alignLeft="@+id/checkout_all"
+            android:layout_alignStart="@+id/checkout_all"
+            android:layout_below="@+id/checkout_all"
+            android:layout_alignRight="@+id/checkout_all"
+            android:layout_alignEnd="@+id/checkout_all" />
+
+        <ListView
+            android:id="@+id/checkout_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"></ListView>
+
+    </RelativeLayout>
+
+</LinearLayout>

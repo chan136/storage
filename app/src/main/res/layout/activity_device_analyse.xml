@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_main" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="货品"
+                    android:textColor="@color/select_device"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <ImageButton
+                    android:onClick="onClick"
+                    android:id="@+id/device_list"
+                    android:background="@drawable/ic_list_white_24dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="320dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SKU"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginLeft="40dp"/>
+
+                <EditText
+                    android:id="@+id/supplier_SKU"
+                    android:theme="@style/EditTextOrange"
+                    android:background="@null"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="85dp"
+                    android:layout_marginLeft="40dp"/>
+
+                <View
+                    android:layout_width="300dp"
+                    android:layout_height="1dp"
+                    android:background="@color/select_device"
+                    android:layout_marginTop="105dp"
+                    android:layout_marginLeft="40dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="名称"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginLeft="40dp"/>
+
+                <EditText
+                    android:id="@+id/supplier_name"
+                    android:theme="@style/EditTextOrange"
+                    android:background="@null"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="145dp"
+                    android:layout_marginLeft="40dp"/>
+
+                <View
+                    android:layout_width="300dp"
+                    android:layout_height="1dp"
+                    android:background="@color/select_device"
+                    android:layout_marginTop="165dp"
+                    android:layout_marginLeft="40dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:onClick="onClick"
+                    android:id="@+id/point_supplier"
+                    android:background="@drawable/ic_uncheck_box_black_24dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:text="指定供货商"
+                    android:textColor="@color/select_device"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"/>
+
+                <ImageButton
+                    android:onClick="onClick"
+                    android:visibility="gone"
+                    android:id="@+id/select_supplier"
+                    android:background="@drawable/ic_list_white_24dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="140dp"/>
+
+                <ImageButton
+                    android:onClick="onClick"
+                    android:id="@+id/point_buyer"
+                    android:background="@drawable/ic_uncheck_box_black_24dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="180dp"/>
+
+                <TextView
+                    android:text="指定买家"
+                    android:textColor="@color/select_device"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="210dp"/>
+
+                <ImageButton
+                    android:onClick="onClick"
+                    android:visibility="gone"
+                    android:id="@+id/select_buyer"
+                    android:background="@drawable/ic_list_white_24dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="280dp"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/point_layout"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SKU"
+                    android:layout_marginLeft="40dp"/>
+
+                <EditText
+                    android:id="@+id/point_SKU"
+                    android:theme="@style/EditTextOrange"
+                    android:background="@null"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp"/>
+
+                <View
+                    android:layout_width="300dp"
+                    android:layout_height="1dp"
+                    android:background="@color/select_device"
+                    android:layout_marginLeft="40dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="名称"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="40dp"/>
+
+                <EditText
+                    android:id="@+id/point_name"
+                    android:theme="@style/EditTextOrange"
+                    android:background="@null"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp"/>
+
+                <View
+                    android:layout_width="300dp"
+                    android:layout_height="1dp"
+                    android:background="@color/select_device"
+                    android:layout_marginLeft="40dp"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:onClick="onClick"
+                    android:id="@+id/standard"
+                    android:background="@drawable/ic_check_box_black_24dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:text="标准时段"
+                    android:textColor="@color/select_device"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"/>
+
+                <ImageButton
+                    android:onClick="onClick"
+                    android:id="@+id/define"
+                    android:background="@drawable/ic_uncheck_box_black_24dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="180dp"/>
+
+                <TextView
+                    android:text="定义时段"
+                    android:textColor="@color/select_device"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="210dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/define_layout"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <TextView
+                    android:text="起始时间"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"/>
+
+                <TextView
+                    android:onClick="getStartDate"
+                    android:id="@+id/start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="50dp"/>
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:background="@color/select_device"
+                    android:layout_alignLeft="@+id/start"
+                    android:layout_alignStart="@+id/start"
+                    android:layout_below="@+id/start"
+                    android:layout_alignRight="@+id/start"
+                    android:layout_alignEnd="@+id/start" />
+
+                <TextView
+                    android:text="截至时间"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="210dp"/>
+
+                <TextView
+                    android:onClick="getEndDate"
+                    android:id="@+id/end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="210dp"/>
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:background="@color/select_device"
+                    android:layout_alignLeft="@+id/end"
+                    android:layout_alignStart="@+id/end"
+                    android:layout_below="@+id/end"
+                    android:layout_alignRight="@+id/end"
+                    android:layout_alignEnd="@+id/end" />
+
+                <TextView
+                    android:text="结算单位"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="50dp"/>
+
+                <ImageButton
+                    android:onClick="onClick"
+                    android:id="@+id/day"
+                    android:background="@drawable/ic_radio_button_checked_black_24dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="75dp"/>
+
+                <TextView
+                    android:text="天"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="77dp"/>
+
+                <ImageButton
+                    android:onClick="onClick"
+                    android:id="@+id/month"
+                    android:background="@drawable/ic_radio_button_unchecked_black_24dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="75dp"/>
+
+                <TextView
+                    android:text="月"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="205dp"
+                    android:layout_marginTop="77dp"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:onClick="onClick"
+                android:id="@+id/activity"
+                android:text="活动"
+                android:gravity="center"
+                android:background="@drawable/shape_gray"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="50dp"/>
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:text="数据统计"
+                android:gravity="center"
+                android:background="@drawable/shape_gray"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"/>
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:text="供货商分析"
+                android:gravity="center"
+                android:background="@drawable/shape_gray"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"/>
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:text="买家分析"
+                android:gravity="center"
+                android:background="@drawable/shape_gray"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"/>
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout> 
